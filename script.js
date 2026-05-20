@@ -6,7 +6,7 @@ const questions = [
     { text: '不准不理对方！！', leftText: '不好', rightText: '好' },
     { text: '知道我叫你亲密昵称有多少次吗！', leftText: '不知道', rightText: '知道' },
     { text: '有委屈了要告诉我知不知道！！', leftText: '不知道', rightText: '知道' },
-    { text: '喜不喜欢和我亲亲🥺', leftText: '喜欢', rightText: '不喜欢' }
+    { text: '喜不喜欢和我亲亲🥺', leftText: '不喜欢', rightText: '喜欢' }
 ];
 
 const state = {
