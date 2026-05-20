@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>int</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="cover"></div>
+    <div class="particles-container" id="particlesContainer"></div>
+    <div class="emojis-container" id="emojisContainer"></div>
+
+    <div class="main-container">
+        <div class="options-container">
+            <div class="option-btn option-left" id="optionLeft">
+                <span class="option-text">不是</span>
+            </div>
+
+            <div class="character-container" id="characterContainer">
+                <div class="character" id="character">
+                    <div class="face" id="face">
+                        <div class="face-gradient" id="faceGradient"></div>
+                        <div class="blush-left blush"></div>
+                        <div class="blush-right blush"></div>
+                        <div class="eyes">
+                            <div class="eye left-eye" id="eyeLeft">
+                                <div class="pupil" id="pupilLeft"></div>
+                            </div>
+                            <div class="eye right-eye" id="eyeRight">
+                                <div class="pupil" id="pupilRight"></div>
+                            </div>
+                        </div>
+                        <div class="mouth" id="mouth"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="option-btn option-right" id="optionRight">
+                <span class="option-text">是</span>
+            </div>
+        </div>
+
+        <div class="text-container" id="textContainer">
+            <p class="main-text" id="questionText">我是不是超爱你！</p>
+        </div>
+    </div>
+
+    <script>
+        function isMobileDevice() {
+            return (typeof window.orientation !== "undefined") || 
+                   (navigator.userAgent.indexOf('IEMobile') !== -1) ||
+                   (navigator.userAgent.indexOf('Android') !== -1 && navigator.userAgent.indexOf('Mobile') !== -1) ||
+                   (navigator.userAgent.indexOf('iPhone') !== -1) ||
+                   (navigator.userAgent.indexOf('iPad') !== -1) ||
+                   (window.innerWidth < 768);
+        }
+
+        if (isMobileDevice()) {
+            document.write('<div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #3d1f2d 0%, #2a1520 50%, #1a0a15 100%); display: flex; align-items: center; justify-content: center; z-index: 9999;"><div style="text-align: center; color: #ffb3c6; font-size: 1.5rem; padding: 20px;">请使用电脑打开此页面</div></div>');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
